@@ -1,0 +1,44 @@
+name: Validate Repository Structure
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  check-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Verify docs folder and required files
+        run: |
+          echo "Checking for docs directory..."
+          if [ ! -d "docs" ]; then
+            echo "Error: 'docs' directory is missing!"
+            exit 1
+          fi
+
+          echo "Checking for required files inside docs..."
+          
+          # Check for SQL script
+          if [ -z "$(ls docs/*.sql 2>/dev/null)" ]; then
+            echo "Error: Missing SQL script file (.sql) in /docs"
+            exit 1
+          fi
+
+          # Check for ERD image (checks for png, jpg, jpeg, svg)
+          if [ -z "$(ls docs/*.png docs/*.jpg docs/*.jpeg docs/*.svg 2>/dev/null)" ]; then
+            echo "Error: Missing ERD image in /docs"
+            exit 1
+          fi
+
+          # Check for endpoint plan document (checks for md, pdf, docx, txt)
+          if [ -z "$(ls docs/*endpoint* docs/*.pdf docs/*.docx docs/*.md 2>/dev/null)" ]; then
+            echo "Error: Missing endpoint plan document in /docs"
+            exit 1
+          fi
+
+          echo "Success: All required files and folders are present!"
