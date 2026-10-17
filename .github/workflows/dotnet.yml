@@ -1,0 +1,43 @@
+# Code written by Claude AI (Anthropic, 2026).
+# Reference: Anthropic. 2026. Claude Sonnet 5.5 [Large language model].
+# Available at: https://claude.ai [Accessed 16 October 2026].
+
+# name shown in the Actions tab on GitHub
+name: Build and Test
+
+# run this workflow every time code is pushed (any branch) or a pull request is opened
+on:
+  push:
+  pull_request:
+
+jobs:
+  build-and-test:
+    # GitHub gives me a fresh Linux computer to run the steps on
+    runs-on: ubuntu-latest
+
+    steps:
+      # step 1: download my code from the repository
+      - name: Get the code
+        uses: actions/checkout@v4
+
+      # step 2: install the .NET 8 SDK
+      - name: Install .NET 8
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      # step 3: find the .sln file wherever it is in the repository
+      - name: Find the solution file
+        run: echo "SOLUTION=$(find . -name '*.sln' | head -n 1)" >> $GITHUB_ENV
+
+      # step 4: download the NuGet packages
+      - name: Restore packages
+        run: dotnet restore "$SOLUTION"
+
+      # step 5: build the whole solution (the api and the tests)
+      - name: Build
+        run: dotnet build "$SOLUTION" --no-restore --configuration Release
+
+      # step 6: run all the unit tests, the workflow turns red if any test fails
+      - name: Run unit tests
+        run: dotnet test "$SOLUTION" --no-build --configuration Release --verbosity normal
