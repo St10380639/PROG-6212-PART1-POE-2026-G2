@@ -1,0 +1,100 @@
+APPENDIX A: AI PROMPTS USED
+===========================
+
+Tool: Claude Sonnet 5.5 (Claude AI), a large language model made by Anthropic.
+Reference: Anthropic. 2026. Claude Sonnet 5.5 [Large language model].
+Available at: https://claude.ai [Accessed 16 October 2026].
+Dates used: 14 - 16 October 2026 (check and edit these dates).
+Use: To help design the database, write and fix the Web API code, and debug
+build and database errors for my POE (Race Day project).
+
+Prompts are copied word for word from my chat, including spelling mistakes.
+Screenshots I attached are described in square brackets.
+
+DATABASE DESIGN
+---------------
+1. [Screenshot of POE requirements: Authentication and User Profile]
+   "FOR SQL WHAT ARE THE ENTITIES AND ATRIBUTES"
+2. "SO IS AUTHENTICATION AN ENTITY"
+3. [Screenshot of the full POE requirements]
+   "AND THIS"
+4. "Is there any errors in the code"
+5. [Screenshot of SQL Server error]
+   "WHY FK ERROR THOUTH I EXECUTED ROLE"
+6. "CAN YOU REDO THE CODE FOR SQL SERVER 2022"
+7. "what is go for"
+
+CONNECTING THE API
+------------------
+8. "i want to connect it to web api from vs do i still need go"
+9. "the difference between mysql and server"
+10. "i want to connect the database to a basic razorpage api"
+11. "the swagger api end points are"
+
+REGISTER, HASHING AND LOGIN
+---------------------------
+12. "FOR ROLE string role = "Participant","Organiser"; This code error"
+13. [Screenshot of register code]
+    "why is this BCrypt error although i installed BCrypt"
+14. [Screenshot of NuGet packages]
+15. [Screenshot of Swagger]
+    "string[] role = { "Participant", "Organiser" }; i want to have a drop
+    down arrow for role to choose between pratic..."
+16. "so i must create a seperate class for register, hashing and login"
+17. "UserRole (enum) is this a seperate class"
+18. [Screenshot of error] "I SEE ERROR"
+19. [Screenshot of store_info class]
+    "so i should remove string[] role..."
+20. "this goes under store_info"
+21. [Screenshot of Swagger response]
+    "did the hashing work and why didnt the database connect"
+22. "ITS STILL IN MASTER"
+23. "did the database work and what the next problem"
+24. "did it work and what is the hash password"
+25. "it says it failed"
+26. "does it have to have two posts cant there be a post and get"
+
+SUBMISSION AND THE REST OF THE API
+----------------------------------
+27. "i want to save the poe with the database and send it to my lecturer
+    with no errors"
+28. "HOW TO I SAVE IT"
+29. "SO EVEN IF I USED RaceDayPOE2026 IN POE DATABASE CONNECT DO I STILL HAVE
+    TO NAME IT RaceDayPOE"
+30. [Screenshot of POE brief: functional requirements]
+    "Can you work on the rest"
+31. "Are these folder I must copy and paste"
+32. [Screenshots of NuGet and permission errors during build]
+33. "Would my lecturer have to download those packages on his side"
+34. "And the database"
+
+SIMPLE CODE AND REFERENCING
+---------------------------
+35. "Can you redo the code but write it like a second year junior software
+    developer student doing a diploma in Information technology and software
+    development wrote it and add comments // on every line of code or add a
+    lot more comments that explains the code before it's typed. The project
+    code must look simple like a junior software developer second year
+    student did it"
+36. "Can I also delete to old and add the new"
+37. "What new get packages to get"
+38. "Redo the code. Keep it basic like you did with he comments. But on every
+    code direct quote Harvard reference that the code is done by you claud
+    Ai for every code to did so I avoided plagiarism"
+39. "If referencing need prompt"
+
+
+PART 2: SWAGGER, UNIT TESTS AND GITHUB
+--------------------------------------
+40. [Screenshot of Program.cs with JwtBearer errors]
+41. [Screenshots of the POE brief: sections 4 Swagger, 5 Unit Testing, 6 GitHub and CI/CD, Submission]
+42. [Button choice] "Small refactor + fake in-memory data (recommended, runs anywhere)"
+43. [Screenshot of search result on adding a test project]
+    "Option A is how it must be created"
+44. "Question 4 must be like option A. Please answer question 5 and 6 give clear instructions"
+
+NOTE
+----
+The full chat can be added as a second appendix if my institution asks for
+the full conversation. The code files credit Claude AI in their comments, and
+the full reference is in References.txt.

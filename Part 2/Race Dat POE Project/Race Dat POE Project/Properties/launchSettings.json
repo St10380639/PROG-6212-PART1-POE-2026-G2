@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Race Dat POE Project": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:49215;http://localhost:49216"
+    }
+  }
+}
