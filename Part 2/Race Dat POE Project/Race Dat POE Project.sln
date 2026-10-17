@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.8.12023.21 stable
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Race Dat POE Project", "Race Dat POE Project\Race Dat POE Project.csproj", "{53381580-2BDD-422B-9307-E825A78F63F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Race Dat POE Project.Tests", "Race Dat POE Project.Tests\Race Dat POE Project.Tests.csproj", "{A45D33A9-5AED-44CA-B7A7-8E8865D8D496}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53381580-2BDD-422B-9307-E825A78F63F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53381580-2BDD-422B-9307-E825A78F63F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53381580-2BDD-422B-9307-E825A78F63F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53381580-2BDD-422B-9307-E825A78F63F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A45D33A9-5AED-44CA-B7A7-8E8865D8D496}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A45D33A9-5AED-44CA-B7A7-8E8865D8D496}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A45D33A9-5AED-44CA-B7A7-8E8865D8D496}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A45D33A9-5AED-44CA-B7A7-8E8865D8D496}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7D722C63-47B2-4750-8D47-379A02AE4AA0}
+	EndGlobalSection
+EndGlobal
