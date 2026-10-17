@@ -26,9 +26,9 @@ jobs:
         with:
           dotnet-version: 8.0.x
 
-      # step 3: find the .sln file wherever it is in the repository
-      - name: Find the solution file
-        run: echo "SOLUTION=$(find . -name '*.sln' | head -n 1)" >> $GITHUB_ENV
+      # step 3: Set the solution file .sln wherever it is in the repository
+      - name: Set the solution file
+        run: echo "SOLUTION=Part 2/Race Dat POE Project/Race Dat POE Project.sln" >> $GITHUB_ENV
 
       # step 4: download the NuGet packages
       - name: Restore packages
