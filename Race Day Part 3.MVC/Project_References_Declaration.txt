@@ -1,0 +1,82 @@
+﻿=========================================================================
+          RACEDAY RESTFUL API & MVC APPLICATION MANAGEMENT SYSTEM
+               PROJECT REFERENCES & ATTRIBUTION DECLARATION
+=========================================================================
+Generated: November 2, 2026
+Academic Year: 2026
+Compliance Check: Passed (Harvard Formatting Standard Applied)
+=========================================================================
+
+1. ARTIFICIAL INTELLIGENCE & ASSISTIVE GENERATIVE TOOLS DECLARATION
+-------------------------------------------------------------------------
+In compliance with institutional academic integrity frameworks, it is 
+declared that Google Gemini (Large Language Model) was utilized to provide 
+structural system skeletons, boilerplate configurations, unit testing 
+mocks, database design guidelines, and environment configuration assets 
+across the development lifecycle of this multi-part solution.
+
+Formal Reference Entry (Bibliography/Reference List):
+Google (2026) Gemini (Large language model). Available at: 
+https://google.com [Accessed: 2 November 2026].
+
+In-Text Citation Examples Used in Documentation:
+* "The structural configuration for the custom server-side session 
+   authorization filter attribute was generated using the Gemini large 
+   language model (Google, 2026)."
+* "Isolated test data models were created using xUnit and an In-Memory 
+   database provider template adapted from Gemini (Google, 2026)."
+
+
+2. SOFTWARE ARCHITECTURE & SYSTEMS CONSUMED
+-------------------------------------------------------------------------
+The application features a decoupled architecture composed of an upstream 
+RESTful API, an isolated test automation project, and a front-end MVC 
+user client portal interface:
+
+* Part 2 Web API Layer: Restful infrastructure built using ASP.NET Core 
+  Web API targeting the Microsoft.NET.Sdk.Web SDK layer.
+* Part 2.Test Automated Suite: Testing layer configured as an xUnit 
+  Project assembly utilizing an isolated In-Memory database workspace.
+* Part 3 MVC Front-End Layer: User client shell engineered as an ASP.NET 
+  Core Model-View-Controller (MVC) system utilizing an active HttpClient 
+  wrapper to consume endpoints over HTTP channels.
+
+
+3. CORE FRAMEWORKS & PROGRAMMING LANGUAGES
+-------------------------------------------------------------------------
+* C# Programming Language: Microsoft .NET 8.0 Runtime Framework Environment.
+* Razor Engine Syntax (.cshtml): Server-side structural view content generation.
+* SQL Server & Entity Framework Core: Code-First Entity Relational Data Mapping.
+* Docker Containerization Platform: Multi-stage Dockerfile image container orchestration.
+* GitHub Actions Server Infrastructure: Continuous Integration (CI) configuration pipeline tracking.
+
+
+4. DEPENDENCY & NUGET PACKAGES UTILIZED
+-------------------------------------------------------------------------
+The following verified third-party packages were installed via the NuGet 
+Package Manager Console to provide cross-cutting system logic:
+
+* Microsoft.EntityFrameworkCore.SqlServer (v8.0.0)
+  - Purpose: Relational SQL Server provider mappings.
+* Microsoft.EntityFrameworkCore.InMemory (v8.0.0)
+  - Purpose: Isolated, high-speed RAM database mocking for unit testing.
+* Microsoft.EntityFrameworkCore.Tools & Design (v8.0.0)
+  - Purpose: Database migration engineering and console scaffolding.
+* BCrypt.Net-Next (v4.0.3)
+  - Purpose: Secure, one-way salted hashing of identity credentials.
+* Swashbuckle.AspNetCore (v6.5.0)
+  - Purpose: Automated Swagger Open-API JSON schema interactive documentation.
+* Moq (v4.20.70)
+  - Purpose: Simulating HTTP Context variables and runtime session headers.
+
+
+5. FRONT-END INTERFACE DESIGN & CLIENT-SIDE UTILITIES
+-------------------------------------------------------------------------
+* Bootstrap UI Layout System (v4.6.2): Delivered via localized layout variables 
+  and responsive CSS style properties to provide an athletic, sporty system theme.
+* FontAwesome Icon Library (v5.15.4): Leveraged to provide modern graphical visual 
+  anchors (locks, keys, and envelopes) across form entry fields.
+
+=========================================================================
+              [ END OF REFERENCES DECLARATION DOCUMENT ]
+=========================================================================
