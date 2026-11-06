@@ -1,0 +1,35 @@
+REFERENCES (Harvard)
+====================
+
+Reference list entry
+--------------------
+Anthropic. 2026. Claude Sonnet 5.5 [Large language model]. Available at:
+https://claude.ai [Accessed 16 October 2026].
+
+In-text citation used in the code comments
+------------------------------------------
+(Anthropic, 2026)
+
+Declaration of AI use
+---------------------
+The source code in this project (controllers, models, database helper, token
+service and Program.cs) was generated with the help of Claude AI, a large
+language model made by Anthropic, in response to my prompts about my POE
+requirements. I tested the code and set up the database and project myself.
+Every file starts with a reference comment, and every class and method has a
+"Code written by Claude AI (Anthropic, 2026)" comment above it.
+
+Notes
+-----
+1. Check your institution's referencing guide for the exact Harvard format
+   for AI tools and whether you must also include your prompts (some
+   institutions ask for the prompt and the date, or an appendix).
+2. Check the module's AI-use policy and declare AI use where it is required.
+3. If you change any of the code yourself, say so (for example "adapted from
+   Claude AI (Anthropic, 2026)"), so the comment stays accurate.
+
+Prompts
+-------
+The prompts I gave to Claude AI are listed word for word in
+Prompts_Appendix.txt (Appendix A). Cite it in the text as:
+(Anthropic, 2026, see Appendix A).
